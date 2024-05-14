@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .both-center {
+    @apply items-center justify-center;
+  }
+  .bodySmall {
+    @apply text-[16px] font-normal leading-[150%];
+  }
+  .home-container {
+    @apply w-full flex flex-col overflow-auto min-h-screen items-center;
+  }
+  .home-nav {
+    @apply flex items-start flex-col;
+  }
+  .home-hero {
+    @apply flex-[0_0_auto] w-full h-auto flex items-start justify-center mt-20;
+  }
+  .home-container1 {
+    @apply gap-[var(--space-space-oneandhalfunits)] flex items-center flex-col justify-start;
+  }
+  .home-hero-heading {
+    @apply max-w-[800px] text-center;
+  }
+  .home-features {
+    @apply flex-[0_0_auto] w-full h-auto flex both-center;
+  }
+  .home-features1 {
+    @apply gap-[var(--space-space-threeunits)] w-full flex max-w-[var(--size-size-maxwidth)] items-center py-[var(--space-space-fourunits)] px-[var(--space-space-threeunits)] flex-col justify-start m-auto;
+  }
+  .home-container2 {
+    @apply flex items-center flex-col justify-start;
+  }
+  .home-features-heading {
+    @apply mb-[var(--space-space-oneandhalfunits)];
+  }
+  .home-container3 {
+    @apply w-full grid gap-[var(--space-space-oneandhalfunits)] grid-cols-[1fr_1fr];
+  }
+  .home-faq {
+    @apply flex-[0_0_auto] w-full h-auto flex both-center;
+  }
+  .home-faq1 {
+    @apply gap-[var(--space-space-twounits)] w-full flex max-w-[var(--size-size-maxwidth)] items-start py-[var(--space-space-fourunits)] px-[var(--space-space-threeunits)] flex-row;
+  }
+  .home-container4 {
+    @apply flex max-w-[35%] items-start flex-col justify-start;
+  }
+  .home-text-upper {
+    @apply mb-[var(--space-space-oneandhalfunits)];
+  }
+  .home-text-lower {
+    @apply text-left;
+  }
+  .home-container5 {
+    @apply gap-[var(--space-space-oneandhalfunits)] flex items-start flex-col;
+  }
+  .home-footer {
+    @apply flex-[0_0_auto] w-full h-auto flex both-center;
+  }
+  .home-separator {
+    @apply flex-[0_0_auto] w-full h-0 flex my-[var(--space-space-twounits)] items-start border-[color:var(--color-gray-900)] border flex-row mx-0 border-t-0 border-x-0 border-solid;
+  }
+  .home-container7 {
+    @apply flex-[0_0_auto] w-full flex items-center flex-row justify-between;
+  }
+
+  @media (max-width: 991px) {
+    .home-hero1 {
+      @apply flex-col;
+    }
+    .home-container1 {
+      @apply items-center mb-[var(--space-space-twounits)] mr-0 pr-0;
+    }
+    .home-hero-heading {
+      @apply text-center;
+    }
+    .home-text49 {
+      @apply text-center px-[var(--space-space-threeunits)];
+    }
+  }
+  @media (max-width: 767px) {
+    .home-navbar-interactive
+      .home-footer1
+      .home-banner1
+      .home-hero1
+      .home-features1 {
+      @apply px-[var(--space-space-twounits)];
+    }
+    .home-nav121 .home-nav221 .home-nav321 .home-nav421 {
+      @apply mb-[var(--space-space-unit)];
+    }
+    .home-text49 {
+      @apply px-[var(--space-space-unit)];
+    }
+    .home-container3 {
+      @apply grid-cols-[1fr];
+    }
+    .home-faq1 {
+      @apply flex-col;
+    }
+    .home-container4 {
+      @apply max-w-full self-center both-center;
+    }
+    .home-separator {
+      @apply my-[var(--space-space-oneandhalfunits)] mx-0;
+    }
+    .home-container7 {
+      @apply items-center flex-col justify-between;
+    }
+    .home-text52 {
+      @apply mb-[var(--space-space-oneandhalfunits)];
+    }
+  }
+  @media (max-width: 479px) {
+    .home-navbar-interactive .home-footer1 {
+      @apply pt-[var(--space-space-unit)] pr-[var(--space-space-unit)] pb-[var(--space-space-unit)] pl-[var(--space-space-unit)];
+    }
+    .home-hero1 .home-features1 .home-banner1 {
+      @apply py-[var(--space-space-twounits)] px-[var(--space-space-unit)];
+    }
+    .home-container1 {
+      @apply mb-[var(--space-space-unit)];
+    }
+    .home-separator {
+      @apply my-[var(--space-space-oneandhalfunits)];
+    }
+    .home-container7 {
+      @apply items-center flex-col justify-between;
+    }
+    .home-text52 {
+      @apply text-center mb-[var(--space-space-oneandhalfunits)];
+    }
+  }
+}
